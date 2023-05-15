@@ -115,10 +115,31 @@ namespace JogoDasPalavras.WinApp
                     TxtAtual.Add(textBox24);
                     TxtAtual.Add(textBox25);
                     break;
-            
+
             }
 
             return auxiliarString;
+        }
+
+        private bool ValidarPalavra(string teste)
+        {
+
+            if (LetraAtual.Equals(teste, StringComparison.OrdinalIgnoreCase))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        private void btnNewWord_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void btnNovoJogo_Click(object sender, EventArgs e)
+        {
+            NovoJogo();
         }
 
 

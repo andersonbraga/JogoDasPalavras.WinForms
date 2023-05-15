@@ -58,32 +58,33 @@
             button2 = new Button();
             button1 = new Button();
             panel2 = new Panel();
+            btnNovoJogo = new Button();
+            textBox25 = new TextBox();
+            textBox24 = new TextBox();
+            textBox23 = new TextBox();
+            textBox22 = new TextBox();
+            textBox21 = new TextBox();
+            textBox20 = new TextBox();
+            textBox19 = new TextBox();
+            textBox18 = new TextBox();
+            textBox17 = new TextBox();
+            textBox16 = new TextBox();
+            textBox15 = new TextBox();
+            textBox14 = new TextBox();
+            textBox13 = new TextBox();
+            textBox12 = new TextBox();
+            textBox11 = new TextBox();
+            textBox10 = new TextBox();
+            textBox9 = new TextBox();
+            textBox8 = new TextBox();
+            textBox7 = new TextBox();
+            textBox6 = new TextBox();
             textBox1 = new TextBox();
             pnlTexto = new Panel();
             textBox5 = new TextBox();
             textBox4 = new TextBox();
             textBox3 = new TextBox();
             textBox2 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
-            textBox10 = new TextBox();
-            textBox11 = new TextBox();
-            textBox12 = new TextBox();
-            textBox13 = new TextBox();
-            textBox14 = new TextBox();
-            textBox15 = new TextBox();
-            textBox16 = new TextBox();
-            textBox17 = new TextBox();
-            textBox18 = new TextBox();
-            textBox19 = new TextBox();
-            textBox20 = new TextBox();
-            textBox21 = new TextBox();
-            textBox22 = new TextBox();
-            textBox23 = new TextBox();
-            textBox24 = new TextBox();
-            textBox25 = new TextBox();
             pnlBotoes.SuspendLayout();
             panel2.SuspendLayout();
             pnlTexto.SuspendLayout();
@@ -369,7 +370,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(1, 0);
+            button1.Location = new Point(0, 0);
             button1.Name = "button1";
             button1.Size = new Size(58, 53);
             button1.TabIndex = 0;
@@ -378,6 +379,7 @@
             // 
             // panel2
             // 
+            panel2.Controls.Add(btnNovoJogo);
             panel2.Controls.Add(textBox25);
             panel2.Controls.Add(textBox24);
             panel2.Controls.Add(textBox23);
@@ -402,6 +404,176 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(378, 406);
             panel2.TabIndex = 1;
+            // 
+            // btnNovoJogo
+            // 
+            btnNovoJogo.Location = new Point(18, 350);
+            btnNovoJogo.Name = "btnNovoJogo";
+            btnNovoJogo.Size = new Size(73, 53);
+            btnNovoJogo.TabIndex = 28;
+            btnNovoJogo.Text = "Novo Jogo";
+            btnNovoJogo.UseVisualStyleBackColor = true;
+            btnNovoJogo.Click += btnNovoJogo_Click;
+            // 
+            // textBox25
+            // 
+            textBox25.Location = new Point(305, 268);
+            textBox25.Multiline = true;
+            textBox25.Name = "textBox25";
+            textBox25.Size = new Size(58, 61);
+            textBox25.TabIndex = 24;
+            // 
+            // textBox24
+            // 
+            textBox24.Location = new Point(228, 268);
+            textBox24.Multiline = true;
+            textBox24.Name = "textBox24";
+            textBox24.Size = new Size(58, 61);
+            textBox24.TabIndex = 23;
+            // 
+            // textBox23
+            // 
+            textBox23.Location = new Point(164, 268);
+            textBox23.Multiline = true;
+            textBox23.Name = "textBox23";
+            textBox23.Size = new Size(58, 61);
+            textBox23.TabIndex = 22;
+            // 
+            // textBox22
+            // 
+            textBox22.Location = new Point(97, 268);
+            textBox22.Multiline = true;
+            textBox22.Name = "textBox22";
+            textBox22.Size = new Size(58, 61);
+            textBox22.TabIndex = 21;
+            // 
+            // textBox21
+            // 
+            textBox21.Location = new Point(18, 268);
+            textBox21.Multiline = true;
+            textBox21.Name = "textBox21";
+            textBox21.Size = new Size(58, 61);
+            textBox21.TabIndex = 20;
+            // 
+            // textBox20
+            // 
+            textBox20.Location = new Point(305, 201);
+            textBox20.Multiline = true;
+            textBox20.Name = "textBox20";
+            textBox20.Size = new Size(58, 61);
+            textBox20.TabIndex = 19;
+            // 
+            // textBox19
+            // 
+            textBox19.Location = new Point(228, 201);
+            textBox19.Multiline = true;
+            textBox19.Name = "textBox19";
+            textBox19.Size = new Size(58, 61);
+            textBox19.TabIndex = 18;
+            // 
+            // textBox18
+            // 
+            textBox18.Location = new Point(164, 201);
+            textBox18.Multiline = true;
+            textBox18.Name = "textBox18";
+            textBox18.Size = new Size(58, 61);
+            textBox18.TabIndex = 17;
+            // 
+            // textBox17
+            // 
+            textBox17.Location = new Point(91, 201);
+            textBox17.Multiline = true;
+            textBox17.Name = "textBox17";
+            textBox17.Size = new Size(58, 61);
+            textBox17.TabIndex = 16;
+            // 
+            // textBox16
+            // 
+            textBox16.Location = new Point(18, 201);
+            textBox16.Multiline = true;
+            textBox16.Name = "textBox16";
+            textBox16.Size = new Size(58, 61);
+            textBox16.TabIndex = 15;
+            // 
+            // textBox15
+            // 
+            textBox15.Location = new Point(305, 134);
+            textBox15.Multiline = true;
+            textBox15.Name = "textBox15";
+            textBox15.Size = new Size(58, 61);
+            textBox15.TabIndex = 14;
+            // 
+            // textBox14
+            // 
+            textBox14.Location = new Point(228, 134);
+            textBox14.Multiline = true;
+            textBox14.Name = "textBox14";
+            textBox14.Size = new Size(58, 61);
+            textBox14.TabIndex = 13;
+            // 
+            // textBox13
+            // 
+            textBox13.Location = new Point(164, 134);
+            textBox13.Multiline = true;
+            textBox13.Name = "textBox13";
+            textBox13.Size = new Size(58, 61);
+            textBox13.TabIndex = 12;
+            // 
+            // textBox12
+            // 
+            textBox12.Location = new Point(91, 134);
+            textBox12.Multiline = true;
+            textBox12.Name = "textBox12";
+            textBox12.Size = new Size(58, 61);
+            textBox12.TabIndex = 11;
+            // 
+            // textBox11
+            // 
+            textBox11.Location = new Point(18, 134);
+            textBox11.Multiline = true;
+            textBox11.Name = "textBox11";
+            textBox11.Size = new Size(58, 61);
+            textBox11.TabIndex = 10;
+            // 
+            // textBox10
+            // 
+            textBox10.Location = new Point(305, 67);
+            textBox10.Multiline = true;
+            textBox10.Name = "textBox10";
+            textBox10.Size = new Size(58, 61);
+            textBox10.TabIndex = 9;
+            // 
+            // textBox9
+            // 
+            textBox9.Location = new Point(228, 67);
+            textBox9.Multiline = true;
+            textBox9.Name = "textBox9";
+            textBox9.Size = new Size(58, 61);
+            textBox9.TabIndex = 8;
+            // 
+            // textBox8
+            // 
+            textBox8.Location = new Point(164, 67);
+            textBox8.Multiline = true;
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(58, 61);
+            textBox8.TabIndex = 7;
+            // 
+            // textBox7
+            // 
+            textBox7.Location = new Point(91, 67);
+            textBox7.Multiline = true;
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(58, 61);
+            textBox7.TabIndex = 6;
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(18, 67);
+            textBox6.Multiline = true;
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(58, 61);
+            textBox6.TabIndex = 5;
             // 
             // textBox1
             // 
@@ -455,166 +627,6 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(58, 61);
             textBox2.TabIndex = 1;
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(18, 67);
-            textBox6.Multiline = true;
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(58, 61);
-            textBox6.TabIndex = 5;
-            // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(91, 67);
-            textBox7.Multiline = true;
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(58, 61);
-            textBox7.TabIndex = 6;
-            // 
-            // textBox8
-            // 
-            textBox8.Location = new Point(164, 67);
-            textBox8.Multiline = true;
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(58, 61);
-            textBox8.TabIndex = 7;
-            // 
-            // textBox9
-            // 
-            textBox9.Location = new Point(228, 67);
-            textBox9.Multiline = true;
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(58, 61);
-            textBox9.TabIndex = 8;
-            // 
-            // textBox10
-            // 
-            textBox10.Location = new Point(305, 67);
-            textBox10.Multiline = true;
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(58, 61);
-            textBox10.TabIndex = 9;
-            // 
-            // textBox11
-            // 
-            textBox11.Location = new Point(18, 134);
-            textBox11.Multiline = true;
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(58, 61);
-            textBox11.TabIndex = 10;
-            // 
-            // textBox12
-            // 
-            textBox12.Location = new Point(91, 134);
-            textBox12.Multiline = true;
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(58, 61);
-            textBox12.TabIndex = 11;
-            // 
-            // textBox13
-            // 
-            textBox13.Location = new Point(164, 134);
-            textBox13.Multiline = true;
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(58, 61);
-            textBox13.TabIndex = 12;
-            // 
-            // textBox14
-            // 
-            textBox14.Location = new Point(228, 134);
-            textBox14.Multiline = true;
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(58, 61);
-            textBox14.TabIndex = 13;
-            // 
-            // textBox15
-            // 
-            textBox15.Location = new Point(305, 134);
-            textBox15.Multiline = true;
-            textBox15.Name = "textBox15";
-            textBox15.Size = new Size(58, 61);
-            textBox15.TabIndex = 14;
-            // 
-            // textBox16
-            // 
-            textBox16.Location = new Point(18, 201);
-            textBox16.Multiline = true;
-            textBox16.Name = "textBox16";
-            textBox16.Size = new Size(58, 61);
-            textBox16.TabIndex = 15;
-            // 
-            // textBox17
-            // 
-            textBox17.Location = new Point(91, 201);
-            textBox17.Multiline = true;
-            textBox17.Name = "textBox17";
-            textBox17.Size = new Size(58, 61);
-            textBox17.TabIndex = 16;
-            // 
-            // textBox18
-            // 
-            textBox18.Location = new Point(164, 201);
-            textBox18.Multiline = true;
-            textBox18.Name = "textBox18";
-            textBox18.Size = new Size(58, 61);
-            textBox18.TabIndex = 17;
-            // 
-            // textBox19
-            // 
-            textBox19.Location = new Point(228, 201);
-            textBox19.Multiline = true;
-            textBox19.Name = "textBox19";
-            textBox19.Size = new Size(58, 61);
-            textBox19.TabIndex = 18;
-            // 
-            // textBox20
-            // 
-            textBox20.Location = new Point(305, 201);
-            textBox20.Multiline = true;
-            textBox20.Name = "textBox20";
-            textBox20.Size = new Size(58, 61);
-            textBox20.TabIndex = 19;
-            // 
-            // textBox21
-            // 
-            textBox21.Location = new Point(18, 268);
-            textBox21.Multiline = true;
-            textBox21.Name = "textBox21";
-            textBox21.Size = new Size(58, 61);
-            textBox21.TabIndex = 20;
-            // 
-            // textBox22
-            // 
-            textBox22.Location = new Point(97, 268);
-            textBox22.Multiline = true;
-            textBox22.Name = "textBox22";
-            textBox22.Size = new Size(58, 61);
-            textBox22.TabIndex = 21;
-            // 
-            // textBox23
-            // 
-            textBox23.Location = new Point(164, 268);
-            textBox23.Multiline = true;
-            textBox23.Name = "textBox23";
-            textBox23.Size = new Size(58, 61);
-            textBox23.TabIndex = 22;
-            // 
-            // textBox24
-            // 
-            textBox24.Location = new Point(228, 268);
-            textBox24.Multiline = true;
-            textBox24.Name = "textBox24";
-            textBox24.Size = new Size(58, 61);
-            textBox24.TabIndex = 23;
-            // 
-            // textBox25
-            // 
-            textBox25.Location = new Point(305, 268);
-            textBox25.Multiline = true;
-            textBox25.Name = "textBox25";
-            textBox25.Size = new Size(58, 61);
-            textBox25.TabIndex = 24;
             // 
             // Form1
             // 
@@ -692,5 +704,6 @@
         private TextBox textBox8;
         private TextBox textBox7;
         private TextBox textBox6;
+        private Button btnNovoJogo;
     }
 }
