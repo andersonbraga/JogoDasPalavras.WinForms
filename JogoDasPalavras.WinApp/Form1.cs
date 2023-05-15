@@ -38,8 +38,8 @@ namespace JogoDasPalavras.WinApp
                 while (!reader.EndOfStream)
                 {
 
-                    var nextLine = reader.ReadLine();
-                    TodasPalavra.Add(nextLine);
+                    var proximaLinha = reader.ReadLine();
+                    TodasPalavra.Add(proximaLinha);
                 }
             }
             return TodasPalavra;
