@@ -18,7 +18,7 @@ namespace JogoDasPalavras.WinApp
             RegistrarEventos();
             ListaPalavra = PegarPalavra();
             NovoJogo();
-            ObterPalavraParcial();
+
 
 
             //ObterPalavraParcial();
@@ -30,23 +30,24 @@ namespace JogoDasPalavras.WinApp
             {
                 botao.Click += DarPalpite;
 
+
             }
 
 
         }
-        private void ObterPalavraParcial()
-        {
-            textBox1.Text = ObterPalavra();
-        }
+
+
 
 
         private void DarPalpite(object? sender, EventArgs e)
         {
             Button botaoClicado = (Button)sender;
-            ObterPalavraParcial();
+            char palpite = botaoClicado.Text[0];
 
 
         }
+
+
 
         private void NovoJogo()
         {
@@ -57,6 +58,7 @@ namespace JogoDasPalavras.WinApp
 
             btnEnter.Enabled = true;
             txtPalavraSecreta.Text = LetraAtual;
+            pnlBotoes.Enabled = false;
         }
 
         private List<string> PegarPalavra()
@@ -86,7 +88,7 @@ namespace JogoDasPalavras.WinApp
             switch (PosicaoAtual)
             {
                 case 1:
-                    auxiliarString = textBox1.Text 
+                    auxiliarString = textBox1.Text
                             + textBox2.Text
                             + textBox3.Text
                             + textBox4.Text
@@ -223,7 +225,7 @@ namespace JogoDasPalavras.WinApp
             }
 
 
-            bool isCorrect = ValidarPalavra(letraEscolhida);
+            bool ehCorreto = ValidarPalavra(letraEscolhida);
 
 
             for (int i = 0; i < TxtAtual.Count(); i++)
@@ -232,7 +234,7 @@ namespace JogoDasPalavras.WinApp
             }
 
 
-            if (isCorrect)
+            if (ehCorreto)
             {
                 FimJogo();
                 return;
@@ -248,6 +250,11 @@ namespace JogoDasPalavras.WinApp
         }
 
         private void textBox26_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
