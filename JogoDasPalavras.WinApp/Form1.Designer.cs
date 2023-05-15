@@ -57,9 +57,13 @@
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
-            panel2 = new Panel();
-            btnNovoJogo = new Button();
+            textBox1 = new TextBox();
+            textBox5 = new TextBox();
+            btnNovaPalavra = new Button();
+            textBox4 = new TextBox();
+            textBox3 = new TextBox();
             textBox25 = new TextBox();
+            textBox2 = new TextBox();
             textBox24 = new TextBox();
             textBox23 = new TextBox();
             textBox22 = new TextBox();
@@ -79,13 +83,8 @@
             textBox8 = new TextBox();
             textBox7 = new TextBox();
             textBox6 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox1 = new TextBox();
+            txtPalavraSecreta = new TextBox();
             pnlBotoes.SuspendLayout();
-            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // pnlBotoes
@@ -118,9 +117,9 @@
             pnlBotoes.Controls.Add(button3);
             pnlBotoes.Controls.Add(button2);
             pnlBotoes.Controls.Add(button1);
-            pnlBotoes.Location = new Point(90, 439);
+            pnlBotoes.Location = new Point(74, 439);
             pnlBotoes.Name = "pnlBotoes";
-            pnlBotoes.Size = new Size(642, 177);
+            pnlBotoes.Size = new Size(658, 177);
             pnlBotoes.TabIndex = 0;
             // 
             // button21
@@ -376,60 +375,68 @@
             button1.Text = "Q";
             button1.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // textBox1
             // 
-            panel2.Controls.Add(textBox1);
-            panel2.Controls.Add(textBox5);
-            panel2.Controls.Add(btnNovoJogo);
-            panel2.Controls.Add(textBox4);
-            panel2.Controls.Add(textBox3);
-            panel2.Controls.Add(textBox25);
-            panel2.Controls.Add(textBox2);
-            panel2.Controls.Add(textBox24);
-            panel2.Controls.Add(textBox23);
-            panel2.Controls.Add(textBox22);
-            panel2.Controls.Add(textBox21);
-            panel2.Controls.Add(textBox20);
-            panel2.Controls.Add(textBox19);
-            panel2.Controls.Add(textBox18);
-            panel2.Controls.Add(textBox17);
-            panel2.Controls.Add(textBox16);
-            panel2.Controls.Add(textBox15);
-            panel2.Controls.Add(textBox14);
-            panel2.Controls.Add(textBox13);
-            panel2.Controls.Add(textBox12);
-            panel2.Controls.Add(textBox11);
-            panel2.Controls.Add(textBox10);
-            panel2.Controls.Add(textBox9);
-            panel2.Controls.Add(textBox8);
-            panel2.Controls.Add(textBox7);
-            panel2.Controls.Add(textBox6);
-            panel2.Location = new Point(223, 3);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(378, 406);
-            panel2.TabIndex = 1;
+            textBox1.Location = new Point(201, 15);
+            textBox1.MaxLength = 1;
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(58, 61);
+            textBox1.TabIndex = 0;
             // 
-            // btnNovoJogo
+            // textBox5
             // 
-            btnNovoJogo.Location = new Point(18, 350);
-            btnNovoJogo.Name = "btnNovoJogo";
-            btnNovoJogo.Size = new Size(73, 53);
-            btnNovoJogo.TabIndex = 28;
-            btnNovoJogo.Text = "Novo Jogo";
-            btnNovoJogo.UseVisualStyleBackColor = true;
-            btnNovoJogo.Click += btnNovoJogo_Click;
+            textBox5.Location = new Point(488, 15);
+            textBox5.Multiline = true;
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(58, 61);
+            textBox5.TabIndex = 4;
+            // 
+            // btnNovaPalavra
+            // 
+            btnNovaPalavra.Location = new Point(640, 157);
+            btnNovaPalavra.Name = "btnNovaPalavra";
+            btnNovaPalavra.Size = new Size(73, 53);
+            btnNovaPalavra.TabIndex = 28;
+            btnNovaPalavra.Text = "Nova Palavra";
+            btnNovaPalavra.UseVisualStyleBackColor = true;
+            btnNovaPalavra.Click += btnNovoJogo_Click;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(411, 15);
+            textBox4.Multiline = true;
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(58, 61);
+            textBox4.TabIndex = 3;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(347, 15);
+            textBox3.Multiline = true;
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(58, 61);
+            textBox3.TabIndex = 2;
             // 
             // textBox25
             // 
-            textBox25.Location = new Point(305, 268);
+            textBox25.Location = new Point(488, 283);
             textBox25.Multiline = true;
             textBox25.Name = "textBox25";
             textBox25.Size = new Size(58, 61);
             textBox25.TabIndex = 24;
             // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(274, 15);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(58, 61);
+            textBox2.TabIndex = 1;
+            // 
             // textBox24
             // 
-            textBox24.Location = new Point(228, 268);
+            textBox24.Location = new Point(411, 283);
             textBox24.Multiline = true;
             textBox24.Name = "textBox24";
             textBox24.Size = new Size(58, 61);
@@ -437,7 +444,7 @@
             // 
             // textBox23
             // 
-            textBox23.Location = new Point(164, 268);
+            textBox23.Location = new Point(347, 283);
             textBox23.Multiline = true;
             textBox23.Name = "textBox23";
             textBox23.Size = new Size(58, 61);
@@ -445,7 +452,7 @@
             // 
             // textBox22
             // 
-            textBox22.Location = new Point(97, 268);
+            textBox22.Location = new Point(274, 283);
             textBox22.Multiline = true;
             textBox22.Name = "textBox22";
             textBox22.Size = new Size(58, 61);
@@ -453,7 +460,7 @@
             // 
             // textBox21
             // 
-            textBox21.Location = new Point(18, 268);
+            textBox21.Location = new Point(201, 283);
             textBox21.Multiline = true;
             textBox21.Name = "textBox21";
             textBox21.Size = new Size(58, 61);
@@ -461,7 +468,7 @@
             // 
             // textBox20
             // 
-            textBox20.Location = new Point(305, 201);
+            textBox20.Location = new Point(488, 216);
             textBox20.Multiline = true;
             textBox20.Name = "textBox20";
             textBox20.Size = new Size(58, 61);
@@ -469,7 +476,7 @@
             // 
             // textBox19
             // 
-            textBox19.Location = new Point(228, 201);
+            textBox19.Location = new Point(411, 216);
             textBox19.Multiline = true;
             textBox19.Name = "textBox19";
             textBox19.Size = new Size(58, 61);
@@ -477,7 +484,7 @@
             // 
             // textBox18
             // 
-            textBox18.Location = new Point(164, 201);
+            textBox18.Location = new Point(347, 216);
             textBox18.Multiline = true;
             textBox18.Name = "textBox18";
             textBox18.Size = new Size(58, 61);
@@ -485,7 +492,7 @@
             // 
             // textBox17
             // 
-            textBox17.Location = new Point(91, 201);
+            textBox17.Location = new Point(274, 216);
             textBox17.Multiline = true;
             textBox17.Name = "textBox17";
             textBox17.Size = new Size(58, 61);
@@ -493,7 +500,7 @@
             // 
             // textBox16
             // 
-            textBox16.Location = new Point(18, 201);
+            textBox16.Location = new Point(201, 216);
             textBox16.Multiline = true;
             textBox16.Name = "textBox16";
             textBox16.Size = new Size(58, 61);
@@ -501,7 +508,7 @@
             // 
             // textBox15
             // 
-            textBox15.Location = new Point(305, 134);
+            textBox15.Location = new Point(488, 149);
             textBox15.Multiline = true;
             textBox15.Name = "textBox15";
             textBox15.Size = new Size(58, 61);
@@ -509,7 +516,7 @@
             // 
             // textBox14
             // 
-            textBox14.Location = new Point(228, 134);
+            textBox14.Location = new Point(411, 149);
             textBox14.Multiline = true;
             textBox14.Name = "textBox14";
             textBox14.Size = new Size(58, 61);
@@ -517,7 +524,7 @@
             // 
             // textBox13
             // 
-            textBox13.Location = new Point(164, 134);
+            textBox13.Location = new Point(347, 149);
             textBox13.Multiline = true;
             textBox13.Name = "textBox13";
             textBox13.Size = new Size(58, 61);
@@ -525,7 +532,7 @@
             // 
             // textBox12
             // 
-            textBox12.Location = new Point(91, 134);
+            textBox12.Location = new Point(274, 149);
             textBox12.Multiline = true;
             textBox12.Name = "textBox12";
             textBox12.Size = new Size(58, 61);
@@ -533,7 +540,7 @@
             // 
             // textBox11
             // 
-            textBox11.Location = new Point(18, 134);
+            textBox11.Location = new Point(201, 149);
             textBox11.Multiline = true;
             textBox11.Name = "textBox11";
             textBox11.Size = new Size(58, 61);
@@ -541,7 +548,7 @@
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(305, 67);
+            textBox10.Location = new Point(488, 82);
             textBox10.Multiline = true;
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(58, 61);
@@ -549,7 +556,7 @@
             // 
             // textBox9
             // 
-            textBox9.Location = new Point(228, 67);
+            textBox9.Location = new Point(411, 82);
             textBox9.Multiline = true;
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(58, 61);
@@ -557,7 +564,7 @@
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(164, 67);
+            textBox8.Location = new Point(347, 82);
             textBox8.Multiline = true;
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(58, 61);
@@ -565,7 +572,7 @@
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(91, 67);
+            textBox7.Location = new Point(274, 82);
             textBox7.Multiline = true;
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(58, 61);
@@ -573,66 +580,58 @@
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(18, 67);
+            textBox6.Location = new Point(201, 82);
             textBox6.Multiline = true;
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(58, 61);
             textBox6.TabIndex = 5;
             // 
-            // textBox2
+            // txtPalavraSecreta
             // 
-            textBox2.Location = new Point(91, 0);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(58, 61);
-            textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(164, 0);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(58, 61);
-            textBox3.TabIndex = 2;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(228, 0);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(58, 61);
-            textBox4.TabIndex = 3;
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(305, 0);
-            textBox5.Multiline = true;
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(58, 61);
-            textBox5.TabIndex = 4;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(18, 0);
-            textBox1.MaxLength = 1;
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(58, 61);
-            textBox1.TabIndex = 0;
+            txtPalavraSecreta.Location = new Point(586, 126);
+            txtPalavraSecreta.Name = "txtPalavraSecreta";
+            txtPalavraSecreta.Size = new Size(166, 23);
+            txtPalavraSecreta.TabIndex = 29;
+            txtPalavraSecreta.TextChanged += textBox26_TextChanged;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(774, 662);
-            Controls.Add(panel2);
+            ClientSize = new Size(756, 662);
+            Controls.Add(txtPalavraSecreta);
+            Controls.Add(textBox1);
+            Controls.Add(textBox5);
             Controls.Add(pnlBotoes);
+            Controls.Add(btnNovaPalavra);
+            Controls.Add(textBox19);
+            Controls.Add(textBox4);
+            Controls.Add(textBox6);
+            Controls.Add(textBox3);
+            Controls.Add(textBox7);
+            Controls.Add(textBox25);
+            Controls.Add(textBox8);
+            Controls.Add(textBox2);
+            Controls.Add(textBox9);
+            Controls.Add(textBox24);
+            Controls.Add(textBox10);
+            Controls.Add(textBox23);
+            Controls.Add(textBox11);
+            Controls.Add(textBox22);
+            Controls.Add(textBox12);
+            Controls.Add(textBox21);
+            Controls.Add(textBox13);
+            Controls.Add(textBox20);
+            Controls.Add(textBox14);
+            Controls.Add(textBox15);
+            Controls.Add(textBox18);
+            Controls.Add(textBox16);
+            Controls.Add(textBox17);
             Name = "Form1";
             Text = "Form1";
             pnlBotoes.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -666,7 +665,6 @@
         private Button button3;
         private Button button2;
         private Button button1;
-        private Panel panel2;
         private TextBox textBox25;
         private TextBox textBox24;
         private TextBox textBox23;
@@ -687,11 +685,12 @@
         private TextBox textBox8;
         private TextBox textBox7;
         private TextBox textBox6;
-        private Button btnNovoJogo;
+        private Button btnNovaPalavra;
         private TextBox textBox1;
         private TextBox textBox5;
         private TextBox textBox4;
         private TextBox textBox3;
         private TextBox textBox2;
+        private TextBox txtPalavraSecreta;
     }
 }

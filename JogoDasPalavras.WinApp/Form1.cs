@@ -1,3 +1,5 @@
+using System.Text.RegularExpressions;
+
 namespace JogoDasPalavras.WinApp
 {
     public partial class Form1 : Form
@@ -13,10 +15,37 @@ namespace JogoDasPalavras.WinApp
         public Form1()
         {
             InitializeComponent();
+            RegistrarEventos();
             ListaPalavra = PegarPalavra();
             NovoJogo();
+            ObterPalavraParcial();
+
 
             //ObterPalavraParcial();
+        }
+
+        private void RegistrarEventos()
+        {
+            foreach (Button botao in pnlBotoes.Controls)
+            {
+                botao.Click += DarPalpite;
+
+            }
+
+
+        }
+        private void ObterPalavraParcial()
+        {
+            textBox1.Text = ObterPalavra();
+        }
+
+
+        private void DarPalpite(object? sender, EventArgs e)
+        {
+            Button botaoClicado = (Button)sender;
+            ObterPalavraParcial();
+
+
         }
 
         private void NovoJogo()
@@ -27,6 +56,7 @@ namespace JogoDasPalavras.WinApp
             PosicaoAtual = 1;
 
             btnEnter.Enabled = true;
+            txtPalavraSecreta.Text = LetraAtual;
         }
 
         private List<string> PegarPalavra()
@@ -52,11 +82,11 @@ namespace JogoDasPalavras.WinApp
             TxtAtual = new List<TextBox>();
 
             string auxiliarString = String.Empty;
-           
+
             switch (PosicaoAtual)
             {
                 case 1:
-                    auxiliarString = textBox1.Text
+                    auxiliarString = textBox1.Text 
                             + textBox2.Text
                             + textBox3.Text
                             + textBox4.Text
@@ -127,6 +157,7 @@ namespace JogoDasPalavras.WinApp
             if (!LetraAtual.Contains(t.Text, StringComparison.OrdinalIgnoreCase))
             {
                 t.BackColor = Color.Gray;
+
             }
 
             else if (LetraAtual[index].ToString().ToLower() != t.Text.ToLower())
@@ -165,12 +196,27 @@ namespace JogoDasPalavras.WinApp
             NovoJogo();
         }
 
+        private bool ValidarInput(string input)
+        {
+            Regex rx = new Regex("^[a-zA-Z]+");
+
+            if (input.Length == 5 && rx.IsMatch(input))
+            {
+
+                return true;
+
+            }
+
+            MessageBox.Show("Tem que ser letras e no minimo 5");
+            return false;
+        }
+
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            string letraEscolhida = ObterPalavra();
+            var letraEscolhida = ObterPalavra();
 
 
-            if (!ValidarPalavra(letraEscolhida))
+            if (!ValidarInput(letraEscolhida))
             {
 
                 return;
@@ -199,6 +245,11 @@ namespace JogoDasPalavras.WinApp
                 MessageBox.Show("Voce Perdeu" + LetraAtual);
                 btnEnter.Enabled = false;
             }
+        }
+
+        private void textBox26_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
 
