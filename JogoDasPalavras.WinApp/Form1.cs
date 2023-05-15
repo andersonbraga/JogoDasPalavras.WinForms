@@ -121,6 +121,33 @@ namespace JogoDasPalavras.WinApp
             return auxiliarString;
         }
 
+        private void BackgroundColor(int index, TextBox t)
+        {
+            
+            if (!LetraAtual.Contains(t.Text, StringComparison.OrdinalIgnoreCase))
+            {
+                t.BackColor = Color.Gray;
+            }
+          
+            else if (LetraAtual[index].ToString().ToLower() != t.Text.ToLower())
+            {
+                t.BackColor = Color.Yellow;
+            }
+            else
+            {
+                
+                t.BackColor = Color.LightGreen;
+            }
+        }
+
+        private void FimJogo()
+        {
+       
+            MessageBox.Show("Parabens, voce ganhou");
+        
+            btnEnter.Enabled = false;
+        }
+
         private bool ValidarPalavra(string teste)
         {
 
@@ -132,11 +159,7 @@ namespace JogoDasPalavras.WinApp
             return false;
         }
 
-        private void btnNewWord_Click(object sender, EventArgs e)
-        {
-          
-        }
-
+    
         private void btnNovoJogo_Click(object sender, EventArgs e)
         {
             NovoJogo();
