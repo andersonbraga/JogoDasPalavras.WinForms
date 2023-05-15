@@ -52,7 +52,7 @@ namespace JogoDasPalavras.WinApp
             TxtAtual = new List<TextBox>();
 
             string auxiliarString = String.Empty;
-            //1) What line are we on?
+           
             switch (PosicaoAtual)
             {
                 case 1:
