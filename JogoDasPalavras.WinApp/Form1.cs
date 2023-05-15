@@ -123,28 +123,28 @@ namespace JogoDasPalavras.WinApp
 
         private void BackgroundColor(int index, TextBox t)
         {
-            
+
             if (!LetraAtual.Contains(t.Text, StringComparison.OrdinalIgnoreCase))
             {
                 t.BackColor = Color.Gray;
             }
-          
+
             else if (LetraAtual[index].ToString().ToLower() != t.Text.ToLower())
             {
                 t.BackColor = Color.Yellow;
             }
             else
             {
-                
+
                 t.BackColor = Color.LightGreen;
             }
         }
 
         private void FimJogo()
         {
-       
+
             MessageBox.Show("Parabens, voce ganhou");
-        
+
             btnEnter.Enabled = false;
         }
 
@@ -159,10 +159,46 @@ namespace JogoDasPalavras.WinApp
             return false;
         }
 
-    
+
         private void btnNovoJogo_Click(object sender, EventArgs e)
         {
             NovoJogo();
+        }
+
+        private void btnEnter_Click(object sender, EventArgs e)
+        {
+            string letraEscolhida = ObterPalavra();
+
+
+            if (!ValidarPalavra(letraEscolhida))
+            {
+
+                return;
+            }
+
+
+            bool isCorrect = ValidarPalavra(letraEscolhida);
+
+
+            for (int i = 0; i < TxtAtual.Count(); i++)
+            {
+                BackgroundColor(i, TxtAtual[i]);
+            }
+
+
+            if (isCorrect)
+            {
+                FimJogo();
+                return;
+            }
+
+
+            PosicaoAtual++;
+            if (PosicaoAtual > 6)
+            {
+                MessageBox.Show("Voce Perdeu" + LetraAtual);
+                btnEnter.Enabled = false;
+            }
         }
 
 
